@@ -1,6 +1,6 @@
 import React from 'react'
 import { PiStarFourFill } from "react-icons/pi";
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -23,9 +23,13 @@ const Navbar = () => {
     <div className=' w-full backdrop-blur-[5px] bg-white/50  fixed top-0 z-[98]'>
         <div className="flex justify-between max-w-[1440px] mx-auto p-3">
 
-            <div className=' flex text-xl space-x-[2px] cursor-pointer'>
-                <p><PiStarFourFill className=' mt-[4px]'/></p>
-                <h1 className=' font-mont font-[600]'>Furnify</h1>
+            <div className=' flex text-xl cursor-pointer w-[110px]'>
+               <Link to='/'>
+                <div className=' flex space-x-[2px] group'>
+                    <p><PiStarFourFill className=' mt-[4px]'/></p>
+                    <h1 className=' font-montalt font-[500] group-hover:ml-2 transition-all duration-150'>Furnify</h1>
+                </div>
+               </Link>
             </div>
 
             <div>
