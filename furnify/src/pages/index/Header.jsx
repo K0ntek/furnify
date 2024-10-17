@@ -17,11 +17,11 @@ const Header = () => {
             <div className=' h-full'>
                 <div className=' max-w-[800px] text-center pt-[80px] mx-auto relative text-white space-y-5'>
 
-                    <div className='space-y-5 pt-10'>
-                        <div className="flex text-xl text-black bg-white w-fit px-2 py-1 rounded-full">
+                    <div className='space-y-5 pt-10 justify-center mx-auto w-fit'>
+                        {/* <div className="flex text-xl text-black bg-white w-fit px-2 py-1 rounded-full">
                             <PiStarFourFill className=' mt-1'/>
                             <h2 className=' font-montalt'>Furnify</h2>
-                        </div>
+                        </div> */}
                         
                         <div className=' flex'>
                             {headerImages.map((image, i)=>{
@@ -34,7 +34,7 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <h1 className=' font-playfair text-7xl lg:text-8xl capitalize'>Komfort i design w Twoim domu</h1>
+                    <h1 className=' font-playfair text-6xl lg:text-7xl capitalize'>Komfort i design w Twoim domu</h1>
 
                     <p className=' font-mont text-xl capitalize'>Znajdziesz u nas wyjątkowe meble, które łączą styl, komfort i funkcjonalność, tworząc przestrzeń idealnie dopasowaną do Twojego domu.</p>
 

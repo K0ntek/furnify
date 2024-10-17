@@ -8,7 +8,7 @@ export default {
     fontFamily: {
       mont: ['Montserrat'],
       montalt: ['Montserrat Alternates'],
-      playfair: ['Playfair'],
+      playfair: ['Playfair Display SC'],
     },
   },
   plugins: [],
