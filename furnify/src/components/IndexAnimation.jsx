@@ -20,8 +20,8 @@ const IndexAnimation = () => {
             <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>
             <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>
             <div className=' font-mont w-fit text-white text-6xl absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] overflow-hidden'>
-                <div className=" flex animationLogo relative top-[80px]">
-                    <PiStarFourFill className=''/> <p className=''>Furnify</p>
+                <div className=" flex relative top-[80px] animationLogo">
+                    <PiStarFourFill className='text-[#e4e4e4] animationLogo'/> <p className=' animationLogo'>Furnify</p>
                 </div>
             </div>
             {/* <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>

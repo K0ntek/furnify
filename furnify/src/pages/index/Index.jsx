@@ -12,7 +12,7 @@ const Index = () => {
     <div className=' p-3 rounded-3xl'>
     <IndexAnimation/>
     <Header/>
-    <div className="max-w-[1440px] mx-auto px-3 space-y-[60px]">
+    <div className="max-w-[1500px] mx-auto px-3 space-y-[60px]">
 
       <div className=' flex justify-between'>
 

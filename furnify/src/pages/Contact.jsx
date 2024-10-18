@@ -8,7 +8,7 @@ const Contact = () => {
         gsap.fromTo('.contactElement', {x:200, opacity:0}, {x:0, opacity:1, duration:.5, stagger:.06, delay:.2})
         gsap.fromTo('.contactCircle', {y:200, opacity:0}, {y:0, opacity:1, duration:.5, delay:.7})
         gsap.fromTo('.formElement', {y:200, opacity:0}, {y:0, opacity:1, duration:.5, stagger:.2, delay:.2})
-        gsap.fromTo('.wavesBg', {x:0, opacity:'5%'}, {x:50, opacity: '8%', duration:8, repeat:-1, yoyo:true, ease: 'back.inOut'})
+        gsap.fromTo('.wavesBg', {x:0, opacity:'5%'}, {x:30, opacity: '8%', duration:8, repeat:-1, yoyo:true, ease: 'back.inOut'})
     },[])
   return (
     <div className=' p-6 mt-[80px] max-w-[1440px] mx-auto min-h-screen'>
@@ -20,9 +20,11 @@ const Contact = () => {
 
                 <div>
                     <div className='max-w-[600px] space-y-8'>
-                        <h2 className='contactElement text-3xl font-playfair font-[700] bg-gradient-to-r from-black to-[#383838] inline-block text-transparent bg-clip-text'>Kontakt</h2>
-                        <h1 className='contactElement text-6xl font-montalt capitalize'>Skontaktuj się z nami</h1>
-                        <p className='contactElement text-3xl capitalize'>Masz jakieś pytania? Napisz, a odpowiemy ci do 24 godzin!</p>
+                       <div>
+                       <h2 className='contactElement text-xl font-playfair font-[700] bg-gradient-to-r from-black to-[#383838] inline-block text-transparent bg-clip-text'>Kontakt</h2>
+                       <h1 className='contactElement text-5xl sm:text-7xl font-playfair capitalize'>Skontaktuj się z nami</h1>
+                       </div>
+                        <p className='contactElement text-2xl capitalize'>Masz jakieś pytania? Napisz, a odpowiemy ci do 24 godzin!</p>
                     </div>
             
                     <div className="mt-[55px]">
@@ -40,7 +42,7 @@ const Contact = () => {
 
                            <div className=' space-y-2'>
                            <p className='contactElement text-lg font-[600]'>Odwiedź!</p>
-                           <div className='font-montalt text-lg flex space-x-4'>
+                           <div className='font-montalt text-lg flex flex-col sm:flex-row gap-4'>
 
                                <div className="contactElement flex justify-between cursor-pointer group max-w-[200px] w-full">
                                     <p className=' group-hover:tracking-wider group-hover:text-zinc-400 transition-all duration-150'>Instagram</p>
@@ -69,7 +71,7 @@ const Contact = () => {
                     <input type="text" name="" id="" placeholder='Imię'  className=' formElement font-mont font-[500] bg-[#fafafa] shadow-[0px_0px_2px_0px] shadow-black/10 focus:outline-none p-3 rounded-2xl w-full'/> <br />
                     <input type="email" name="" id="" placeholder='E-mail'  className=' formElement font-mont font-[500] bg-[#fafafa] shadow-[0px_0px_2px_0px] shadow-black/10 focus:outline-none p-3 rounded-2xl w-full'/><br />
                     <textarea name="" id="" cols="30" rows="10" placeholder='Wiadomość' className=' formElement font-mont font-[500] bg-[#fafafa] shadow-[0px_0px_2px_0px] shadow-black/10 focus:outline-none p-3 rounded-2xl w-full'></textarea> <br />
-                    <div className="relative formElement">
+                    <div className="relative formElement pb-10">
                     <button className=' absolute right-0 bg-zinc-900 px-5 py-2 rounded-full text-white font-montalt text-xl hover:tracking-wider transition-all duration-150'>Wyślij</button>
                     </div>
                 </div>

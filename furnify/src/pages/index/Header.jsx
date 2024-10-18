@@ -9,10 +9,9 @@ const Header = () => {
         "https://images.unsplash.com/photo-1507149833265-60c372daea22?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "https://images.unsplash.com/photo-1522156373667-4c7234bbd804?q=80&w=1883&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
-
   return (
     <div>
-        <div className='w-full min-h-screen p-6 rounded-3xl relative bg-[url("https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]'>
+        <div className='w-full min-h-screen p-6 rounded-3xl shadow-[0px_0px_20px_0px] shadow-black/50 relative bg-[url("https://images.unsplash.com/photo-1505873242700-f289a29e1e0f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")]'>
         <div className="bg-black/40 absolute top-0 left-0 w-full h-full rounded-3xl"></div>
             <div className=' h-full'>
                 <div className=' max-w-[800px] text-center pt-[80px] mx-auto relative text-white space-y-5'>
@@ -23,7 +22,7 @@ const Header = () => {
                             <h2 className=' font-montalt'>Furnify</h2>
                         </div> */}
                         
-                        <div className=' flex'>
+                        <div className=' flex ml-[35px] w-fit'>
                             {headerImages.map((image, i)=>{
                                 return(
                                     <div key={i} className=' w-[65px] sm:w-[80px]'>
