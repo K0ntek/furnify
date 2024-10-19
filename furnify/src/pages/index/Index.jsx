@@ -16,15 +16,15 @@ const Index = () => {
 
       <div className=' flex justify-between'>
 
-        <div className='flex space-x-1 font-playfair font-[700] text-lg'>
+        <div className='flex space-x-1 font-playfair font-[700] text-[12px] sm:text-lg'>
           <PiStarFourLight className='mt-1'/>
           <h1>STYL</h1>
         </div>
-        <div className='flex space-x-1 font-playfair font-[700] text-lg'>
+        <div className='flex space-x-1 font-playfair font-[700] text-[12px] sm:text-lg'>
           <PiHeart className='mt-1'/>
           <h1>KOMFORT</h1>
         </div>
-        <div className='flex space-x-1 font-playfair font-[700] text-lg'>
+        <div className='flex space-x-1 font-playfair font-[700] text-[12px] sm:text-lg'>
           <PiPuzzlePieceLight className='mt-1'/>
           <h1>FUNKCJONALNOŚĆ</h1>
         </div>

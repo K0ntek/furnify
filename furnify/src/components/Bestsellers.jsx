@@ -7,7 +7,7 @@ const Bestsellers = () => {
   const {products} = useContext(ShopContext)
   return (
     <div>
-      <h1 className=' text-6xl font-playfair text-center'>Nasze ostatnie bestsellery</h1>
+      <h1 className=' text-4xl sm:text-6xl font-playfair text-center'>Nasze ostatnie bestsellery</h1>
 
      <div className=' grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
       {products.map((product, i)=>{

@@ -15,11 +15,11 @@ const ProductItem = ({id, image, name, price}) => {
 
         <img src={image} alt="productImage" className=' w-full h-full object-cover rounded-3xl'/>
         <div className="w-full h-full absolute top-0 right-0 bg-gradient-to-b from-black/80 to-transparent group-hover:to-black/60"></div>
-        <h1 className=' absolute top-3 left-3'>{name}</h1>
-        <p className=' absolute top-3 right-3'>{price} {currency}</p>
+        <h1 className=' absolute top-3 left-3 text-md sm:text-lg'>{name}</h1>
+        <p className=' absolute top-3 right-3 text-md sm:text-lg'>{price} {currency}</p>
 
         <div className=' absolute bottom-3 right-3'>
-            <button className=' font-montalt text-lg bg-white rounded-full p-2 text-black hover:tracking-wider transition-all duration-150'>Do koszyka</button>
+            <button className=' font-montalt text-sm bg-white rounded-full p-2 text-black hover:tracking-wider transition-all duration-150'>Do koszyka</button>
         </div>
     </div>
   )

@@ -12,19 +12,19 @@ const DescSection = () => {
         </div>
 
         <div>
-            <div className='py-10 space-y-5 relative top-[50%] translate-y-[-50%]'>
-                <h2 className=' capitalize font-playfair text-xl font-[700]'>Twój dom, Twoje zasady.</h2>
-                <h1 className=' font-playfair text-6xl capitalize'>Odkryj wyjątkowe koszyści w swoim domu</h1>
-                <p className=' font-mont text-lg capitalize font-[500]'>W furnify stawiamy na jakość i styl, dzięki czemu nasze meble przetrwają lata. Nasze projekty nie tylko upiększają twoją przestrzeń, ale także odzwierciedlają zaangażowanie w zrównoważony rozwój.</p>
+            <div className='py-10 space-y-5 relative top-[50%] translate-y-[-50%] text-center sm:text-start'>
+                <h2 className=' capitalize font-playfair text-lg sm:text-xl font-[700]'>Twój dom, Twoje zasady.</h2>
+                <h1 className=' font-playfair text-4xl sm:text-6xl capitalize'>Odkryj wyjątkowe koszyści w swoim domu</h1>
+                <p className=' font-mont text-md sm:text-lg capitalize font-[500] text-justify'>W furnify stawiamy na jakość i styl, dzięki czemu nasze meble przetrwają lata. Nasze projekty nie tylko upiększają twoją przestrzeń, ale także odzwierciedlają zaangażowanie w zrównoważony rozwój.</p>
 
-                <div className="flex space-x-4">  
-                  <div className=' relative space-y-2 max-w-[300px] p-5 rounded-3xl bg-zinc-950 text-white'>
+                <div className="flex gap-4 flex-col sm:flex-row">  
+                  <div className=' relative space-y-2 sm:max-w-[300px] p-5 rounded-3xl bg-zinc-950 text-white'>
                   <GiSoundWaves className=' absolute top-3 right-3 text-2xl'/>
                     <h2 className=' font-playfair capitalize text-2xl font-[600]'>Trwałość ma znaczenie</h2>
                     <p className=' font-mont text-sm'>Odmień swoją przestrzeń życiową dzięki naszym stylowym i nowoczesnym projektom mebli.</p>
                   </div>
 
-                  <div className=' relative space-y-2 max-w-[300px] p-5 rounded-3xl bg-[#725134] text-white'>
+                  <div className=' relative space-y-2 sm:max-w-[300px] p-5 rounded-3xl bg-[#725134] text-white'>
                     <PiStarFourFill className=' absolute top-3 right-3 text-xl'/>
                     <h2 className=' font-playfair capitalize text-2xl font-[600]'>Atrakcyjny wygląd</h2>
                     <p className=' font-mont text-sm'>Odmień swoją przestrzeń życiową dzięki naszym stylowym i nowoczesnym projektom mebli.</p>
