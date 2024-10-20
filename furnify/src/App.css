@@ -8,3 +8,36 @@ body{
 a.active .navstar{
     left: 0;
 }
+
+.toggledIcon .line{
+    transition: all .5s;
+  }
+  
+   .toggledIcon .line1{
+    transform: rotate(45deg);
+    position: relative;
+     top: 4px;
+  }
+  
+  .toggledIcon .line2{
+    transform: rotate(-45deg);
+    position: relative;
+    top: -3px;
+  }
+  
+  .toggledIcon .line3{
+    display: none;
+  }
+  
+  .toggledIcon:hover .line1, .toggledIcon:hover .line2{
+    background: red;
+  }
+  
+  .navbarMenu {
+    top: -300px;
+    transition: .5s;
+  }
+
+  .navbarActive{
+    top:0;
+  }

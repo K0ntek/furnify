@@ -39,7 +39,7 @@ const Header = () => {
 
                     <div className=' flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 justify-center'>
                         <button className=' font-montalt p-3 text-sm sm:text-lg hover:tracking-wider transition-all duration-150 bg-zinc-900 text-white rounded-3xl'>Zobacz więcej</button>
-                        <button className=' font-montalt p-3 text-sm sm:text-lg hover:tracking-wider transition-all duration-150 bg-white text-black rounded-3xl'>Zobacz więcej</button>
+                        <button className=' font-montalt p-3 text-sm sm:text-lg hover:tracking-wider transition-all duration-150 bg-white text-black rounded-3xl'>Kolekcje</button>
                     </div>
                 </div>
             </div>

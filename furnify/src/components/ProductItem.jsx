@@ -1,12 +1,14 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import { PiStarFourFill } from "react-icons/pi";
+import { Link } from 'react-router-dom';
 
 const ProductItem = ({id, image, name, price}) => {
 
     const {currency} = useContext(ShopContext)
   return (
-    <div className='cursor-pointer aspect-square rounded-3xl relative overflow-hidden group text-white font-playfair text-xl shadow-[0px_0px_10px_0px] shadow-black/50'>
+   <Link to={`/product/${id}`}>
+        <div className='cursor-pointer aspect-square rounded-3xl relative overflow-hidden group text-white font-playfair text-xl shadow-[0px_0px_10px_0px] shadow-black/50'>
 
         <div className=' flex space-x-1 text-2xl absolute top-[50%] translate-y-[-50%] z-[97] left-[100%] group-hover:left-[50%] group-hover:translate-x-[-50%] transition-all duration-200'>
             <PiStarFourFill className=' mt-[3px]'/>
@@ -21,7 +23,8 @@ const ProductItem = ({id, image, name, price}) => {
         <div className=' absolute bottom-3 right-3'>
             <button className=' font-montalt text-sm bg-white rounded-full p-2 text-black hover:tracking-wider transition-all duration-150'>Do koszyka</button>
         </div>
-    </div>
+        </div>
+    </Link>
   )
 }
 

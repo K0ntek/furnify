@@ -6,6 +6,8 @@ import Bestsellers from '../../components/Bestsellers'
 import Bestseller from './Bestseller'
 import LatestCollection from './LatestCollection'
 import { PiStarFourLight, PiHeart, PiPuzzlePieceLight } from "react-icons/pi";
+import waves from '../../../public/waves.png'
+
 
 const Index = () => {
   return (
@@ -13,6 +15,7 @@ const Index = () => {
     <IndexAnimation/>
     <Header/>
     <div className="max-w-[1500px] mx-auto px-3 space-y-[60px]">
+    <img src={waves} alt="" className=' wavesBg fixed top-0 left-0 z-[-1] opacity-[4%] w-full h-screen object-cover'/>
 
       <div className=' flex justify-between'>
 
