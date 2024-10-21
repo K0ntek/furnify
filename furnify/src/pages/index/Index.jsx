@@ -12,7 +12,7 @@ import waves from '../../../public/waves.png'
 const Index = () => {
   return (
     <div className=' p-3 rounded-3xl'>
-    <IndexAnimation/>
+   {/* <IndexAnimation/> */}
     <Header/>
     <div className="max-w-[1500px] mx-auto px-3 space-y-[60px]">
     <img src={waves} alt="" className=' wavesBg fixed top-0 left-0 z-[-1] opacity-[4%] w-full h-screen object-cover'/>
