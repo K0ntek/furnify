@@ -11,7 +11,7 @@ const Contact = () => {
         gsap.fromTo('.wavesBg', {x:0, opacity:'5%'}, {x:30, opacity: '8%', duration:8, repeat:-1, yoyo:true, ease: 'back.inOut'})
     },[])
   return (
-    <div className=' p-6 mt-[80px] max-w-[1440px] mx-auto min-h-screen'>
+    <div className=' p-6 mt-[80px] max-w-[1440px] mx-auto min-h-screen overflow-x-hidden'>
         {/* <div className="absolute z-[-1] contactCircle top-[0] right-[-10%] w-2/3 md:w-[40%] aspect-square rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-black/70 via-transparent to-transparent"></div> */}
         {/* <div className="absolute z-[-1] bottom-[-10%] left-[20%] w-3/5 md:w-[30%] aspect-[12/9] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[rgba(54,102,84,.8)] via-transparent to-transparent"></div> */}
         <img src={waves} alt="" className=' wavesBg fixed top-0 left-0 z-[-1] opacity-5 w-full h-screen object-cover'/>

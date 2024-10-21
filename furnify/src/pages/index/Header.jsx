@@ -22,7 +22,7 @@ const Header = () => {
                             <h2 className=' font-montalt'>Furnify</h2>
                         </div> */}
                         
-                        <div className=' flex ml-[35px] w-fit'>
+                        <div className=' flex w-fit' style={{marginLeft: `${20 * 3}px`}}>
                             {headerImages.map((image, i)=>{
                                 return(
                                     <div key={i} className=' w-[65px] sm:w-[80px]'>

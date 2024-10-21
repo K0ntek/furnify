@@ -6,11 +6,12 @@ const IndexAnimation = () => {
 
     useEffect(()=>{
         gsap.fromTo('.greenBlock', {width:0, }, {width: '100%', duration:1, stagger:.2, delay:.4})
-        gsap.to('.animationLogo', {top: '0', duration:.5, stagger:.1,  delay:1})
+        gsap.to('.animationLogo', {top: '-5px', duration:.5, stagger:.1,  delay:1})
         gsap.to('.greenBlocks', {top: '-100%', duration:1, delay:2})
         gsap.to('.blackBlock', {top: '-100%', duration:1, delay:2.2})
         gsap.to('.whiteBlock', {top: '-100%', duration:1, delay:1.7})
-        gsap.to('.blocksWrapper', {top: '-100%', duration:0, delay:3.3})
+        gsap.to('.blocksWrapper', {top: '-100%', duration:0, display: 'none', delay:3.3})
+        // gsap.to('.blocksWrapper', {display: 'none', delay:3.3})
     },[])
 
   return (
@@ -19,7 +20,7 @@ const IndexAnimation = () => {
             <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>
             <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>
             <div className="greenBlock bg-[#092b1e] w-full h-screen"></div>
-            <div className=' font-mont w-fit text-white text-6xl absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] overflow-hidden'>
+            <div className=' font-mont w-fit text-white text-3xl sm:text-5xl md:text-6xl absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] overflow-hidden'>
                 <div className=" flex relative top-[80px] animationLogo">
                     <PiStarFourFill className='text-[#e4e4e4] animationLogo'/> <p className=' animationLogo'>Furnify</p>
                 </div>
